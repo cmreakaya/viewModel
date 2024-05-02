@@ -1,0 +1,13 @@
+﻿@model List<Urun>
+
+
+<h3 class="display-5">Urun Listesi</h3>
+
+<div>
+
+    @foreach (Urun urun in Model)
+    {
+        <p class="lead"> @urun.Id - @urun.Ad - @urun.Kategori - @urun.Stok - @urun.Fiyat</p>
+    }
+
+</div>
